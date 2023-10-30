@@ -1,0 +1,61 @@
+﻿@model SolicitaCompra.Models.Produtos
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div>
+
+    <a class="btn btn-primary" asp-action="Index">Voltar</a>
+</div>
+<br />
+
+<div class="row">
+    <div class="col-md">
+
+
+        <div class="card">
+            <div class="card-header">Informações do Produto </div>
+
+            <div class="card-body row">
+                <div class="form-group col-md">
+                    <label> @Html.DisplayNameFor(model => model.Produto)</label>
+                    <input disabled class="form-control" value="@Html.DisplayFor(model => model.Produto)" />
+                </div>
+
+                <div class="form-group col-md">
+                    <label> @Html.DisplayNameFor(model => model.Codigo)</label>
+                    <input disabled class="form-control" value="@Html.DisplayFor(model => model.Codigo)" />
+                </div>
+
+                <div class="form-group col-md">
+                    <label> @Html.DisplayNameFor(model => model.ValorQtd)</label>
+                    <input disabled class="form-control" value="@Html.DisplayFor(model => model.ValorQtd)" />
+                </div>
+            </div>
+
+
+
+            <div class="card-body row">
+                <div class="form-group col-md">
+                    <label> @Html.DisplayNameFor(model => model.Descricao)</label>
+                    <input disabled class="form-control" value="@Html.DisplayFor(model => model.Descricao)" />
+                </div>
+            </div>
+
+
+            <div class="card-body row">
+                <div class="form-group col-md">
+                    <label> @Html.DisplayNameFor(model => model.QtdEstoque)</label>
+                    <input disabled class="form-control" value="@Html.DisplayFor(model => model.QtdEstoque)" />
+                </div>
+                <div class="form-group col-md">
+                    <label> @Html.DisplayNameFor(model => model.QtdMin)</label>
+                    <input disabled class="form-control" value="@Html.DisplayFor(model => model.QtdMin)" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+

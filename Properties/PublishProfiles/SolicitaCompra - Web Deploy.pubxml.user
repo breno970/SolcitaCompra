@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAADONnybeH2US/mL35R51+KAAAAAACAAAAAAAQZgAAAAEAACAAAADyeVzqKpIMqxxEDw+jRqvDpW5NSiqLOg1qlxAra7wiWgAAAAAOgAAAAAIAACAAAACUgylffB9YvpUllWvYtV/OCoXYtzwjOd3lmyQSrWCNcIAAAABZseSRCmB2p7/pC5j4UdSMcBLs568PZGnkvoJiOZoOLl2RjWe88RzUfvqXnON1ylukr0LfOXYZoI5H6TFi0YPWirLcimEXqMTBJnuyRFaz0dHWofNnG2OUkuTF9WC+g37RdsnARGgRJxy4+7kMVy6aG8aa7SDmtw3woBpd688+zUAAAAAq+VKGdBFGiwRI2mNXZh/uKoPMjSl3NdLsI+5tLauuB7EJQasfUB8ocjnS1fUdFdBT8LcwYZivqmb2UDJejQkf</EncryptedPassword>
+    <History>False|2023-10-30T07:21:24.7114793Z;True|2023-10-30T04:09:53.7619496-03:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="SolicitaCompraContextConnection">
+      <Value>Server=tcp:ugbteste.database.windows.net,1433%3bInitial Catalog=dbControleEstoque%3bPersist Security Info=False%3bUser ID=breno%3bPassword=Teste%40970%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="SolicitaCompra.Models.dbControleContext">
+      <Value>Server=tcp:ugbteste.database.windows.net,1433%3bInitial Catalog=dbControleEstoque%3bPersist Security Info=False%3bUser ID=breno%3bPassword=Teste%40970%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

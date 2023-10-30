@@ -1,0 +1,123 @@
+﻿@model SolicitaCompra.Models.Fornecedores
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div>
+
+    <div>
+        <a class="btn btn-primary" asp-action="Index">Voltar</a>
+    </div>
+    <br />
+
+    <div class="row">
+        <div class="col-md">
+
+
+            <div class="card">
+                <div class="card-header">Informações do Fornecedor</div>
+
+                <div class="card-body row">
+
+
+                    <div class="form-group col-md">
+                        <label> @Html.DisplayNameFor(model => model.Id)</label>
+                        <input disabled class="form-control" value="@Html.DisplayFor(model => model.Id)" />
+                    </div>
+
+
+                    <div class="form-group col-md">
+                        <label> @Html.DisplayNameFor(model => model.Nome)</label>
+                        <input disabled class="form-control" value="@Html.DisplayFor(model => model.Nome)" />
+                    </div>
+
+                </div>
+
+                <div class="card-body row">
+
+                    <div class="form-group col-md">
+                        <label> @Html.DisplayNameFor(model => model.Email)</label>
+                        <input disabled class="form-control" value="@Html.DisplayFor(model => model.Email)" />
+                    </div>
+
+                    <div class="form-group col-md">
+                        <label> @Html.DisplayNameFor(model => model.Cnpj)</label>
+                        <input disabled class="form-control" value="@Html.DisplayFor(model => model.Cnpj)" />
+                    </div>
+
+                </div>
+
+                <div class="card-body row">
+                    <div class="form-group col-md">
+                        <label> @Html.DisplayNameFor(model => model.IncricaoEstadual)</label>
+                        <input disabled class="form-control" value="@Html.DisplayFor(model => model.IncricaoEstadual)" />
+                    </div>
+
+                    <div class="form-group col-md">
+                        <label> @Html.DisplayNameFor(model => model.IncricaoMunicipal)</label>
+                        <input disabled class="form-control" value="@Html.DisplayFor(model => model.IncricaoMunicipal)" />
+                    </div>
+
+                </div>
+
+               
+            </div>
+
+            <br />
+
+            <div class="card">
+
+                <div class="card-header">Endereço</div>
+
+                <div class="card-body row">
+
+
+                    <div class="form-group col-md">
+                        <label> @Html.DisplayNameFor(model => model.Cep)</label>
+                        <input disabled class="form-control" value="@Html.DisplayFor(model => model.Cep)" />
+                    </div>
+
+                    <div class="form-group col-md">
+                        <label> @Html.DisplayNameFor(model => model.Cidade)</label>
+                        <input disabled class="form-control" value="@Html.DisplayFor(model => model.Cidade)" />
+                    </div>
+
+                    <div class="form-group col-md">
+                        <label> @Html.DisplayNameFor(model => model.Bairro)</label>
+                        <input disabled class="form-control" value="@Html.DisplayFor(model => model.Bairro)" />
+                    </div>
+
+                </div>
+
+
+                <div class="card-body row">
+                    <div class="form-group col-md">
+                        <label> @Html.DisplayNameFor(model => model.Estado)</label>
+                        <input disabled class="form-control" value="@Html.DisplayFor(model => model.Estado)" />
+                    </div>
+
+                    <div class="form-group col-md">
+                        <label> @Html.DisplayNameFor(model => model.Numero)</label>
+                        <input disabled class="form-control" value="@Html.DisplayFor(model => model.Numero)" />
+                    </div>
+
+                    <div class="form-group col-md">
+                        <label> @Html.DisplayNameFor(model => model.Rua)</label>
+                        <input disabled class="form-control" value="@Html.DisplayFor(model => model.Rua)" />
+                    </div>
+                </div>
+                <div class="card-body row">
+                    <div class="form-group col-md">
+                        <label> @Html.DisplayNameFor(model => model.Complemento)</label>
+                        <input disabled class="form-control" value="@Html.DisplayFor(model => model.Complemento)" />
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+

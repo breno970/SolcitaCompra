@@ -1,0 +1,131 @@
+﻿@model SolicitaCompra.Models.Fornecedores
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h4>Fornecedores</h4>
+<hr />
+<div>
+    <a class="btn btn-primary" asp-action="Index">Voltar</a>
+</div>
+<br />
+
+<div class="row">
+    <div class="col-md">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="card">
+                <div class="card-header">Informações de Contato</div>
+
+                <div class="card-body row">
+                    <div class="form-group col-md">
+                        <label for="Nome">Nome Completo *</label>
+                        <input id="txtNome" type="text" name="Nome" placeholder="Nome Completo">
+                        <span asp-validation-for="Nome" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group col-md">
+                        <label for="Email">Email *</label>
+                        <input id="Email" type="text" name="Email" placeholder="E-mail">
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+
+
+                    <div class="form-group col-md">
+                        <label for="Cnpj">CNPJ *</label>
+                        <input id="txtCnpj" type="text" name="Cnpj" placeholder="CNPJ">
+                        <span asp-validation-for="Cnpj" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="card-body row">
+                    <div class="form-group col-md">
+                        <label for="IncricaoEstadual">Inscricão Estadual *</label>
+                        <input id="IncricaoEstadual" type="text" name="IncricaoEstadual" placeholder="Inscricão Estadual ">
+                        <span asp-validation-for="IncricaoEstadual" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-md">
+                        <label for="IncricaoMunicipal">Inscricão Municipal *</label>
+                        <input id="IncricaoMunicipal" type="text" name="IncricaoMunicipal" placeholder="Inscricão Municipal">
+                        <span asp-validation-for="IncricaoMunicipal" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="card">
+
+                <div class="card-header">Endereço</div>
+
+                <div class="card-body row">
+
+
+                    <div class="form-group col-md">
+                        <label for="Cep">CEP *</label>
+                        <input id="txtCep" type="text" name="Cep" placeholder="00000-000">
+                        <span asp-validation-for="Cep" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group col-md">
+                        <label for="Cidade">Cidade *</label>
+                        <input id="txtCidade" type="text" name="Cidade" placeholder="Cidade">
+                        <span asp-validation-for="Cidade" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group col-md">
+                        <label for="Bairro">Bairro *</label>
+                        <input id="txtBairro" type="text" name="Bairro" placeholder="Bairro">
+                        <span asp-validation-for="Bairro" class="text-danger"></span>
+                    </div>
+
+                </div>
+
+                <div class="card-body row">
+
+                    <div class="form-group col-md">
+                        <label for="Estado">Estado *</label>
+                        <input id="txtEstado" type="text" name="Estado" placeholder="UF">
+                        <span asp-validation-for="Estado" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group col-md">
+                        <label for="Numero">Numero</label>
+                        <input id="txtNumero" type="text" name="Numero" placeholder="Numero">
+                        <span asp-validation-for="Numero" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group col-md">
+                        <label for="Rua">Rua *</label>
+                        <input id="txtRua" type="text" name="Rua" placeholder="Rua">
+                        <span asp-validation-for="Rua" class="text-danger"></span>
+                    </div>
+
+                </div>
+
+                <div class="card-body row">
+                    <div class="form-group col-md">
+                        <label for="Complemento">Complemento</label>
+                        <textarea class="form-control" input id="Complemento" type="text" name="Complemento" placeholder="Complemento"></textarea>
+                        <span asp-validation-for="Complemento" class="text-danger"></span>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="form-group">
+                <input type="submit" value="Incluir" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

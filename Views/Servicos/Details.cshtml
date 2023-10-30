@@ -1,0 +1,56 @@
+﻿@model SolicitaCompra.Models.Servicos
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div>
+
+    <a class="btn btn-primary" asp-action="Index">Voltar</a>
+</div>
+<br />
+
+<div class="row">
+    <div class="col-md">
+
+
+        <div class="card">
+            <div class="card-header">Informações do Serviço </div>
+
+            <div class="card-body row">
+                <div class="form-group col-md">
+                    <label> @Html.DisplayNameFor(model => model.IdFornecedor)</label>
+                    <input disabled class="form-control" value="@Html.DisplayFor(model => model.IdFornecedor)" />
+                </div>
+
+                <div class="form-group col-md">
+                    <label> @Html.DisplayNameFor(model => model.Servico)</label>
+                    <input disabled class="form-control" value="@Html.DisplayFor(model => model.Servico)" />
+                </div>
+            </div>
+
+
+
+
+            <div class="card-body row">
+                <div class="form-group col-md">
+                    <label> @Html.DisplayNameFor(model => model.Descricao)</label>
+                    <input disabled class="form-control" value="@Html.DisplayFor(model => model.Descricao)" />
+                </div>
+
+                <div class="form-group col-md">
+                    <label> @Html.DisplayNameFor(model => model.Descricao)</label>
+                    <input disabled class="form-control" value="@Html.DisplayFor(model => model.Prazo)" />
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
